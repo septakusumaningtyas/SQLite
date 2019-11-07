@@ -11,7 +11,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textSize="20sp"
-        android:text="SQLite"
+        android:text="@string/nama_app"
         />
     <Button
         android:id="@+id/button_tambah"
@@ -19,6 +19,14 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/nama_app"
         android:layout_centerHorizontal="true"
-        android:text="Tambah Data"
+        android:text="@string/tombol_tambah"
+        />
+    <Button
+        android:id="@+id/button_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_tambah"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tombol_lihat"
         />
 </RelativeLayout>
