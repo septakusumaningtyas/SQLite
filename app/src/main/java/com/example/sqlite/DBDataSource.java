@@ -127,4 +127,10 @@ public class DBDataSource {
         //update query
         database.update(DBHelper.TABLE_NAME, args, strFilter, null);
     }
+    // delete barang sesuai ID
+    public void deleteBarang(long id)
+    {
+        String strFilter = "_id=" + id;
+        database.delete(DBHelper.TABLE_NAME, strFilter, null);
+    }
 }

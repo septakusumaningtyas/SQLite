@@ -64,6 +64,20 @@ public class ViewData extends ListActivity implements AdapterView.OnItemLongClic
                     }
                 }
         );
+        //apabila tombol delete di klik
+        delButton.setOnClickListener(
+                new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View v) {
+                        // Delete barang
+                        dataSource.deleteBarang(b.getId());
+                        dialog.dismiss();
+                        finish();
+                        startActivity(getIntent());
+                    }
+                }
+        );
         return true;
     }
 
